@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  }
+
+  body{
+    background-color: cadetblue;
+  }
+
+  #board {
+    margin: 0 auto;
+    width: 60%;
+    height: 400px;
+  }
+
+  section {
+    border: 5px white solid;
+    width: 33%;
+    height: 33%;
+    float: left;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 80px;
+    padding-bottom: 100px;
+    color: mediumblue;
+
+
+  }
+
+#board section:first-child {
+      border-left: none;
+      border-top: none;
+    }
+
+  #board section:nth-child(2) {
+      border-top: none;
+    }
+
+  #board section:nth-child(3) {
+      border-top: none;
+      border-right: none;
+    }
+
+  #board section:nth-child(4) {
+      border-left: none;
+    }
+
+  #board section:nth-child(6){
+      border-right: none;
+    }
+
+  #board section:nth-child(7){
+        border-left: none;
+        border-bottom: none;
+    }
+
+  #board section:nth-child(8){
+      border-bottom: none;
+    }
+
+  #board section:last-child {
+      border-right: none;
+      border-bottom: none;
+    }
+
+
+
+    .x {
+      background-image: url('../img/x.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .circle {
+      background-image: url("../img/o.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    #restartButton {
+      margin-left: 48%;
+      display: none;
+      border-radius: 20px;
+      height: 50px;
+    width: 100px;
+    background-color: palegreen;
+    }
+
+    #restartButton + button {
+      margin-left: 43%;
+      border-radius:20px;
+      height: 50px;
+    width: 100px;
+    background-color: palegreen;
+    }
+
+.gone {
+  display: none;
+}
